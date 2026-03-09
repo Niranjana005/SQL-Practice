@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS practice_db;
-use pactice_db;-- already the db is created with a table students and it have column attributes like(id,name,dept,marks) and added values
+use practice_db;-- already the db is created with a table students and it have column attributes like(id,name,dept,marks) and added values
 
 -- sql and operator
 select * from students
