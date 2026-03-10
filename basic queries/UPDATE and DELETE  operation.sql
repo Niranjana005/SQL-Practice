@@ -2,10 +2,10 @@
 create database if not exists practice_db;
 use practice_db;-- already practice_db database is created and a table of students is created with the attributes (id,name,marks,dept) with some values
 -- inserting some values to table
-insert into students value(16,'mirdhua','aids',57);
-insert into students value(17,'rythm','eee',60);
-insert into students value(18,'isai','it',67);
-insert into students value(19,'kumar','aiml',78);
+insert into students values(16,'mirdhua','aids',57);
+insert into students values(17,'rythm','eee',60);
+insert into students values(18,'isai','it',67);
+insert into students values(19,'kumar','aiml',78);
 select * from students;
 -- update the table value
 update students
