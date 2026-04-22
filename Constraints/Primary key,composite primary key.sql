@@ -37,3 +37,34 @@ insert into products values(5,"orange",100,1,6);
 -- removing the composite primary key
 alter table products
 drop primary key;
+
+-- ---------AUTO INCREMENT------------
+
+-- dropping table transactions
+drop table transactions;
+
+-- CREATING THE SAME TABLE TRANSACTIONS
+create table transactions(
+       t_id int primary key auto_increment,
+       amount decimal(10,2)
+       );
+-- making the transactions to auto increment from 10
+alter table transactions
+auto_increment=10;
+
+-- inserting values
+insert into transactions (amount) values(200);-- starts from 10
+
+-- removing the auto increment
+alter table transactions
+modify t_id int;
+
+-- adding the auto incremet into a existing table
+alter table transactions
+modify t_id int auto_increment;
+
+insert into transactions(amount) values(500);
+
+
+
+
